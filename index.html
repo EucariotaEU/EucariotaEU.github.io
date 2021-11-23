@@ -6,6 +6,14 @@
     <base href="/">
     <title>FICHA DE CONTROLE</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
     <link rel="stylesheet" href="indexCss.css">
 </head>
 <body>
@@ -39,12 +47,12 @@
           <option value="1">Kelly (Vale)</option>
           <option value="1">Leandro</option>
           <option value="1">Liliana Fernandez Janez</option>
-          <option value="1">Lisia Paiva</option>
+          <option value="1">Lísia Paiva</option>
           <option value="1">Luciana (Vale)</option>
           <option value="1">Maiara</option>
           <option value="1">Mariana Aguilar</option>
           <option value="1">Rafaela (Vale)</option>
-          <option value="1">Rebeca CAmargo</option>
+          <option value="1">Rebeca Camargo</option>
           <option value="1">Talita Sena Rocha</option>
           <option value="1">Veridiane Barcelos Machado</option>
           <option value="1">Vitor Garcia</option>
@@ -52,64 +60,67 @@
           <option value="1">Outro</option> 
         </select><br><br>
         <label>HOSPITAL:</label>
-        <select>
-     <option selected>Selecione uma opção        </option>
-      <option value="">         Albert Sabin</option>
-      <option value="">   Alvorada Jacarei (Jacarei)</option>
+        <select style="max-width:90%">
+     <option selected>Selecione uma opção</option>
+      <option value="">   Albert Sabin</option>
+      <option value="">   Alvorada Jacareí (Jacareí)</option>í
       <option value="">   Alvorada Moema</option>
       <option value="">   Alvorada Santo Amaro</option>
-      <option value="">   Antonio Afonso ( Jacarei)</option>
-      <option value="">   Antoninho da Rocha Marmo (SJC)</option>
-      <option value="">   Bosque da Saude</option>
+      <option value="">  Antônio Afonso (Jacareí)</option>
+      <option value="">  Antoninho da Rocha Marmo (SJC)</option>
+      <option value="">   Bosque da Saúde</option>
       <option value="">   Carlos Chagas</option>
-      <!-- <option value="">   Casa de Saúde de Santos (Santos)</option> -->
-      <option value="">   cruzeiro do Sul (Osasco)</option>
-      <option value="">   Dom Joao Becker</option>
+
+      <option value="">    Casa de Saúde de Santos (Santos)</option>
+     
+      <option value="">  Cruzeiro do Sul (Osasco)</option>
+      <option value="">  Dom João Becker</option>
       <option value="">   Edmundo Vasconcelos</option>
-      <option value="">   Frei Galvao (Santos)</option>
+      <option value="">   Frei Galvão (Santos)</option>
       <option value="">   FUSAM</option>
-      <option value="">   GACC ( SJC)</option>
-      <option value="">   Hospital Clinica Sao José (SJC)</option>
-      <option value="">   Hospital Regina</option>
+      <option value="">  GACC (SJC)</option>
+      <option value="">  Hospital Clinica São José (SJC)</option>
+      <option value="">  Hospital Regina</option>
       <option value="">   Igesp</option>
-      <!-- <option value="">   Ipiranga de Mogi (Mogi das Cruzes)</option> -->
+     <option value="">  Ipiranga de Mogi (Mogi das Cruzes)</option>
       <option value="">   M' Boi Mirim</option>
       <option value="">   Mandaqui</option>
-      <!-- <option value="">   Maternidade de Guarulhos (Guarulhnos)</option> -->
+      <option value="">   Maternidade de Guarulhos (Guarulhos)</option> 
       <option value="">   Metropolina Lapa</option>
-      <option value="">   Next Sao Bernardo do Campo</option>
+      <option value="">   Next São Bernardo do Campo</option>
       <option value="">   Nossa Senhora do Rosário</option>
-      <option value="">   Paulo Sacramento (jundiai)</option>
+      <option value="">   Paulo Sacramento (Jundiaí)</option>
       <option value="">   Pro XII (SJC)</option>
-      <option value="">   Policlin Jacarei</option>
-      <option value="">   Policlin (SJC)</option>
-      <option value="">   PA UNIMED (SJC)</option>
-      <option value="">   Samaritano Higienópolis</option>
+      <option value="">   Policlin Jacareí</option>
+      <option value="">  Policlin (SJC)</option>
+      <option value="">  PA UNIMED (SJC)</option>
+      <option value="">  Samaritano Higienópolis</option>
+      <option value="">   Samaritano Paulista</option>
       <option value="">   Salvalus</option>
       <option value="">   San Paolo</option>
-      <!-- <option value="">   Santa Casa de Jacareí (Jacarei)</option> -->
-      <!-- <option value="">   Santa casa de Sao José dos Campos (SJC)</option> -->
-      <option value="">   Santa Matarina</option>
+      <option value="">   Santa Casa de Jacareí (Jacareí)</option> 
+ <option value="">   Santa Casa de São José dos Campos (SJC)</option>
+ <option value="">Santa Catarina </option>
       <option value="">   Santa Cruz</option>
       <option value="">   Santa Isabel</option>
       <option value="">   Santa Marcelina</option>
       <option value="">   Santa Maria de Suzano</option>
       <option value="">   Santa Paula</option>
-      <!-- <option value="">   Santana de Mogi (Mogi das Cruzes)</option> -->
-      <option value="">   Santos Dumont(SJC)</option>
-      <option value="">   Sao Camilo Ipiranga</option>
-      <option value="">   Sao Camilo Pompeia</option>
-      <option value="">   SAo Camilo Santana</option>
-      <option value="">   Sao Francisco (Jacarei)</option>
-      <option value="">   Sao Luiz Jabaquara</option>
-      <option value="">   Sirio Libánes</option>
+      <option value="">  Santana de Mogi (Mogi das Cruzes)</option> 
+      <option value="">   Santos Dumont (SJC)</option>
+      <option value="">   São Camilo Ipiranga</option>
+      <option value="">   São Camilo Pompeia</option>
+      <option value="">   São Camilo Santana</option>
+      <option value="">   São Francisco (Jacareí)</option>
+      <option value="">   São Luiz Jabaquara</option>
+      <option value="">  Sírio Libanês</option>
       <option value="">   Vila Lobos</option>
-      <option value="">   Vitoria</option>
-      <option value="">   Vivalle (SJC)</option>
-      <option value="">   Unimed Cacapavia ( Cacapava)</option>
+      <option value="">  Vitória</option>
+      <option value="">  Vivalle (SJC)</option>
+      <option value="">  Unimed Caçapava (Caçapava)</option>
       <option value="">   Unimed Guarulhos (Guarulhos)</option>
       <option value="">   Unimed Novo Hamburgo</option>
-      <option value="">   Unimed Sao Leopoldo</option>
+      <option value="">   Unimed São Leopoldo</option>
       <option value="">   Outros  </option>
         </select><br><br>
 
@@ -122,25 +133,26 @@
    <option value="">    Adriano Pinto</option>
    <option value="">    Adriano Couto</option>
    <option value="">    Alan Barbosa</option>
-   <option value="">    Albeto Kalil Kobbaz</option>
+   <option value="">   Alberto Kalil Kobbaz</option>
    <option value="">    Alberty Oliveira Freitas</option>
    <option value="">    Alcedir</option>
    <option value="">    Alessandro Venglier</option>
    <option value="">    Alex Meneses</option>
    <option value="">    Alexandre Bull</option>
+   <option value="">   Alexandre Stefano Carlos</option>
    <option value="">    Ali</option>
    <option value="">    Anis Taha</option></option>
-   <option value="">    Antonio Calil Assumppcao</option>
-   <option value="">    Antonio Cardoso Pinto</option>
-   <option value="">    Antonio Rocha</option>
-   <option value="">    Arthur Ramos Moreno</option>
+   <option value="">    Antonio Calil Assumpção</option>
+   <option value="">    Antônio Cardoso Pinto</option>
+   <option value="">    Antônio Rocha</option>
+   <option value="">   Arthur Ramos Moreno</option>
    <option value="">    Augusto Caparica</option>
    <option value="">    Bruno Camargo Tiseo</option>
    <option value="">    Bruno Hurtado</option>
    <option value="">    Bruno Nascimento</option>
-   <option value="">    Bruno Simao</option>
+   <option value="">    Bruno Simão</option>
    <option value="">    Carlos Cadu</option>
-   <option value="">    CAio Cesar Cintra</option>
+   <option value="">    Caio Cesar Cintra</option>
    <option value="">    Carlos Alberto</option>
    <option value="">    Carlos Cunha</option>
    <option value="">    Carlos Eduardo Bonafe</option>
@@ -149,10 +161,11 @@
    <option value="">    Camillo Loprete</option>
    <option value="">    Camilo Mota</option>
    <option value="">    Camilo de Carvalho Jorgetti</option>
-   <option value="">    Carlos ALberto Santos</option>
-   <option value="">    Carlos PEnteado</option>
-   <option value="">    Caue Dezotti</option>
-   <option value="">    Cesar Augusto Ogawa</option>
+   <option value="">    Carlos Alberto Santos</option>
+   <option value="">    Carlos Penteado</option>
+   <option value="">    Cauê Dezotti</option>
+   <option value="">    César Augusto Ogawa</option>
+   <option value="">  Cesar Thiago</option>
    <option value="">    Christin Frederich</option>
    <option value="">    Conrado Pascini</option>
    <option value="">    Cristiano Bortolin</option>
@@ -162,12 +175,12 @@
    <option value="">    Daniel Ilias</option>
    <option value="">    Danilo Budib</option>
    <option value="">    Darlan</option>
-   <option value="">    David COhen</option>
+   <option value="">    David Cohen</option>
    <option value="">    Diego Shiguemi Ikejiri</option>
    <option value="">    Eduardo Barros</option>
    <option value="">    Eduardo Muracca</option>
    <option value="">    Eder Nisi</option>
-   <option value="">    Edison</option>
+   <option value="">    Edson</option>
    <option value="">    Eduardo Lopez Mazzucato</option>
    <option value="">    Eduardo Remaile</option>
    <option value="">    Élcio</option>
@@ -176,24 +189,24 @@
    <option value="">    Eraldo Alves Bezerra</option>
    <option value="">    Ernestino Craveiro Gomes</option>
    <option value="">    Estefania Nicoleti</option>
-   <option value="">    Fabio Alexandre Pardal</option>
-   <option value="">    Fabio Ferro Rodriguez</option>
-   <option value="">    Fabio Lichand</option>
-   <option value="">    Fabio Cesar Torricelli</option>
-   <option value="">    Fabio Yoshiaki Tanno</option>
+   <option value="">   Fábio Alexandre Pardal</option>
+   <option value="">   Fábio Ferro Rodrigues</option>
+   <option value="">   Fábio Lichand</option>
+   <option value="">    Fábio Cesar Torricelli</option>
+   <option value="">    Fábio Yoshiaki Tanno</option>
    <option value="">    Fabricio Chaves Novaes</option>
    <option value="">    Felipe Domingues</option>
    <option value="">    Felipe Plugiesi</option>
    <option value="">    Felipe Vasconcelos</option>
    <option value="">    Felipe Saraiva</option>
-   <option value="">    Fernando ALmeida</option>
-   <option value="">    Fernando José Akira Sato</option>
+   <option value="">    Fernando Almeida</option>
+   <option value="">   Fernando José Akira Sato</option>
    <option value="">    Fernando Carboni Tardelli</option>
    <option value="">    Fernando Berti</option>
-   <option value="">    Fernando De Queiros</option>
-   <option value="">    Flavio Trigo</option>
+   <option value="">    Fernando de Queirós</option>
+   <option value="">    Flávio Trigo</option>
    <option value="">    Francisco Hidelbrando</option>
-   <option value="">    Frederico Vilela de Oliveira</option>
+   <option value="">   Frederico Vilela de Oliveira</option>
    <option value="">    Gilberto Chavarria</option>
    <option value="">    Gilberto Viana</option>
    <option value="">    Glauco Chiaradia</option>
@@ -203,16 +216,164 @@
    <option value="">    Gustavo Notari</option>
    <option value="">    Gustavo Medeiros</option>
    <option value="">    Gustavo Moreira Lima</option>
-   <option value="">    herval</option>
+   <option value="">    Herval</option>
    <option value="">    Hugo Queiroz</option>
    <option value="">    Isaac Amselem</option>
-   <option value="">    Jair Pedralll</option>
+   <option value="">    Jair Pedralli</option>
    <option value="">    Jamily</option>
    <option value="">    Jean Marcel Martins Borgo</option>
-   <option value="">    Joao Leao e Souza Neto</option>
-   <option value="">   Joao Paulo da Cunha Lima</option>
+   <option value="">   João Leão e Souza Neto</option>
+   <option value="">   João Paulo da Cunha Lima</option>
+<option value="">  João Paulo de Oliveira</option>
+<option value="">  João Paulo Greco</option>
+<option value="">  Jorg Daoud Merched Youssef</option>
+<option value="">  Jorge Cezar Pereira de Castro</option>
+<option value="">  Jorge Miranda</option>
+<option value="">  José Augusto Bittencourt</option>
+<option value="">  Jose Carlos Truzzi</option>
+<option value="">  José Freitas Melo Junior</option>
+<option value="">  José Henrique Di Giovanni</option>
+<option value="">  José Luiz Nardi</option>
+<option value="">  José Paulo Coelho Martini</option>
+<option value="">  José Ronaldo Bigatão</option>
+<option value="">  Josinelio</option>
+<option value="">  Júlio Cesar Campos Bissoli</option>
+<option value="">  Julio Padovani</option>
+<option value="">  Kleiton Yamacake</option>
+<option value="">  Laércio Zavaloni</option>
+<option value="">  Leonardo Inácio Braga</option>
+<option value="">  Leonardo Lá Regina</option>
+<option value="">  Leonardo Welter</option>
+<option value="">  Lucas Furtado Faria</option>
+<option value="">  Lucas La Ferreira</option>
+<option value="">  Lucas Lambert</option>
+<option value="">  Lino Cerveira</option>
+<option value="">  Luís Bonetti</option>
+<option value="">  Luis Fernando Rocha de Abreu</option>
+<option value="">  Luis Gustavo</option>
+<option value="">  Luiz Antônio Bonetti Junior</option>
+<option value="">  Luiz Cláudio Limão</option>
+<option value="">  Luiz Dorley</option>
+<option value="">  Luiz Eduardo Ferreti</option>
+<option value="">  Luiz Felipe Brollo</option>
+<option value="">  Luccas Soares</option>
+<option value="">  Marcello Schettino Barbosa</option>
+<option value="">  Marcelo Apezzato</option>
+<option value="">  Marcelo Fornazzari</option>
+<option value="">  Marcelo Leite</option>
+<option value="">  Marcelo Lorenzi</option>
+<option value="">  Marcelo Santos</option>
+<option value="">  Marcelo Wassano</option>
+<option value="">  Márcio Navarro Gianelo</option>
+<option value="">  Márcio Pontes Reis</option>
+<option value="">  Opção 101</option>
+<option value="">  Márcio Rosa Pagan</option>
+<option value="">  Marco Antonio Arap</option>
+<option value="">  Marco Antônio Calil Assumpção</option>
+<option value="">  Marco Antônio Fioravante</option>
+<option value="">  Marco Tulio Coelho Lasmar</option>
+<option value="">  Marcos Figueiredo Mello</option>
+<option value="">  Marcos Segawa</option>
+<option value="">  Marcos Kiyoshi</option>
+<option value="">  Marlon Fiorentini</option>
+<option value="">  Mario Bittar</option>
+<option value="">  Mário Henrique Bueno Bavaresco</option>
+<option value="">  Mário José</option>
+<option value="">  Mário Luis Casella</option>
+<option value="">  Matheus Amaral</option>
+<option value="">  Matheus Almeida C Siqueira</option>
+<option value="">  Matheus Ferreira</option>
+<option value="">  Matheus Neves Ribeiro</option>
+<option value="">  Mauricio Akira</option>
+<option value="">  Maurício Peres</option>
+<option value="">  Maurilio Lucio Lima Meneguci</option>
+<option value="">  Nelson Luis Anacleto Artea</option>
+<option value="">  Nelson Luiz Artéa</option>
+<option value="">  Nyander Alex Ramos</option>
+<option value="">  Newton Soares de Sa Filho</option>
+<option value="">  Ocivaldo</option>
+<option value="">  Oscar Eduardo Hidetoshi Fugita</option>
+<option value="">  Paulo Nogueira</option>
+<option value="">  Pedro Dias Soares</option>
+<option value="">  Pedro Zapparoli Padovani</option>
+<option value="">  Pericles Auad</option>
+<option value="">  Paulo Ebert Esteves</option>
+<option value="">  Paulo Maron</option>
+<option value="">  Paulo Pontes</option>
+<option value="">  Rafael C. Prata</option>
+<option value="">  Rafael Eduardo Marques</option>
+<option value="">  Rafael Spada Rebechi</option>
+<option value="">  Raphael Barroso Kato</option>
+<option value="">  Raphael Sanches</option>
+<option value="">  Rafael Romero</option>
+<option value="">  Raul Queiroz Ferreira</option>
+<option value="">  Renato Alvim Soares</option>
+<option value="">  Renato Vasconcelos</option>
+<option value="">  Renato Yama</option>
+<option value="">  Ricardo Brites</option>
+<option value="">  Ricardo Cartaxo Filho</option>
+<option value="">  Ricardo Di Miguelli</option>
+<option value="">  Ricardo Marcondes de Mattos</option>
+<option value="">  Ricardo Segabinazzi</option>
+<option value="">  Robert Conti</option>
+<option value="">  Rodrigo Bocos</option>
+<option value="">  Rodrigo Madeira Campos</option>
+<option value="">  Rodrigo Silva</option>
+<option value="">  Rodolfo Otávio Tomaz Bertti</option>
+<option value="">  Rodrigo Alcantara</option>
+<option value="">  Rodrigo Gonzales Bocos</option>
+<option value="">  Rodrigo Luvizotto</option>
+<option value="">  Rodrigo Rodrigues Pessoa</option>
+<option value="">  Rodrigo Wilson</option>
+<option value="">  Ronnie</option>
+<option value="">  Samuel Costa</option>
+<option value="">  Sander Cássio Zequi</option>
+<option value="">  Sandro Nassar</option>
+<option value="">  Sandro W</option>
+<option value="">  Sergio Eduardo Martins</option>
+<option value="">  Sergio Leite Ottoni</option>
+<option value="">  Tarcísio</option>
+<option value="">  Tiago Magalhães</option>
+<option value="">  Thiago Souto Hemerly</option>
+<option value="">  Thyago Vieira Soares</option>
+<option value="">  Wagner Morandini</option>
+<option value="">  Vasco Crivelaro</option>
+<option value="">  Victor Monteiro</option>
+<option value="">  Wanderley Crestoni Fernandes</option>
+<option value="">  Wilson Sato</option>
+<option value="">  Ying Li Chiang</option>
+<option value="">  Zein Mohamed</option>
+<option value="">  Outros</option>
         </select><br><br>
-  
+    <div class="row">
+      
+        <div class='col-sm-2'>
+          <label >DATA DA CIRURGIA: </label>
+
+            <div class="form-group">
+              
+       
+                <div class='input-group date' id='datetimepicker1'>
+                   
+                  <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+<br>
+
+
+
+
         <label>DADOS DE IDENTIFICAÇÃO DO EQUIPAMENTO:  </label>
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
           <option selected>Selecione uma opção
@@ -224,16 +385,50 @@
     <option value="">    2909981</option>
     <option value="">    2193682</option>
     <option value="">    2167817</option>
-    <option value="">    2152189</option>
-    <option value="">    2103103</option>
+    <option value="">    2152178</option>
     <option value="">    2103103</option>
     <option value="">    2103104</option>
-    <option value="">    2169935</option>
-    <option value="">    2301369</option>
-    <option value="">    2358745</option>
+    <option value="">    2169993</option>
+    <option value="">    2358642</option>
     <option value="">    2184706</option>
-  
-    </select><br><br>
+    <option value="">    2620597</option>
+    <option value="">    2316487</option>
+    <option value="">   2504693</option>
+ <option value=""> 2154402</option>
+ <option value=""> 2184587</option>
+ <option value=""> 2183287</option>
+ <option value=""> 2183833</option>
+ <option value=""> 2030271</option>
+ <option value=""> 2203201</option>
+ <option value=""> 2208789</option>
+ <option value=""> 2157318</option>
+ <option value=""> 2156897</option>
+ <option value=""> 2233780</option>
+ <option value=""> 2234024</option>
+ <option value=""> 2485711</option>
+ <option value=""> 2183416</option>
+ <option value=""> 2150034</option>
+ <option value=""> 2172392</option>
+ <option value=""> 2227553</option>
+ <option value=""> 2213934</option>
+ <option value=""> 2203020</option>
+ <option value=""> 2187125</option>
+ <option value=""> 2187158</option>
+ <option value=""> 2183831</option>
+ <option value=""> 2002222</option>
+ <option value=""> 2002111</option>
+ <option value=""> 2004444</option>
+ <option value=""> 2004333</option>
+ <option value=""> 2141545</option>
+ <option value=""> 2158255</option>
+ <option value=""> 2011555</option>
+ <option value=""> 2012777</option>
+ <option value=""> 2012666</option>
+ <option value=""> 2012888</option>
+ <option value=""> 2102999</option>
+ <option value=""> 2102101</option>
+ <option value=""> 2102102</option>
+ <option value=""> Opção 52</option> </select><br><br>
 
 
 
